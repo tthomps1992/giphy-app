@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Giphy Button Review</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body id="wholeThing">
+
+    <div class="jumbotron" id="header">
+        <h1>Choose Your Player!</h1>
+        <h4>Click the buttons to display GIPHYs of your favorite Basketball Players
+    </div>
+    <form class="form-inline" id="basketballSearch">
+        <div class="form-group">
+            <label for="baketballInput">Search for Basketball Players</label>
+            <input type="text" id="basketballInput">
+        </div>
+        <!-- Button triggers show to be added -->
+        <input id="addPlayer" type="submit" value="submit">
+    </form>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="player" data-search="Lebron James">Lebron James</button>
+                <button class="btn btn-primary" id="player" data-search="Steph Curry">Steph Curry</button>
+                <button class="btn btn-primary" id="player" data-search="Michael Jordan">Michael Jordan</button>
+                <button class="btn btn-primary" id="player" data-search="Shaq">Shaq</button>
+
+                <div id="myButtons"></div>
+            </div>
+            <!--end of button group -->
+        </div>
+        <!--end of container -->
+    </div>
+    <!--end of row -->
+
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+        <!--end of container -->
+    </div> <!-- end of row  -->
+
+
+    <script type="text/javascript" src="assets/javascript/giphy.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
